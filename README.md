@@ -1,5 +1,10 @@
 # KeyboardNavigationHack
-Focus an element and shows the focus visual hack too!
+
+Focus an element and shows the focus visual hack too! There is maybe a better solution for this, but I don't found it...
+
+**Don't try this @home!**
+
+![button_focus_hack](https://cloud.githubusercontent.com/assets/658431/14565712/a29cdd94-032c-11e6-8454-68bf71a79a62.gif)
 
 Usage
 
