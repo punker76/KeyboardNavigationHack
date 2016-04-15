@@ -1,6 +1,6 @@
 # KeyboardNavigationHack
 
-Focus an element and shows the focus visual hack too! There is maybe a better solution for this, but I don't found it...
+Focus an element and shows the focus visual style too! There is maybe a better solution for this, but I don't found it...
 
 **Don't try this @home!**
 
