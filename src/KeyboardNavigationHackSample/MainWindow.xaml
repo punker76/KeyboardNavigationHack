@@ -2,38 +2,22 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:KeyboardNavigationHackSample"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controlzex="urn:controlzex"
         Title="MainWindow"
         Width="525"
         Height="350"
         mc:Ignorable="d">
     <Grid>
 
-        <StackPanel Orientation="Vertical">
-
-            <GroupBox Margin="10" Header="Focus Hack">
-                <StackPanel Orientation="Vertical">
-                    <Button Margin="10"
-                            Click="ButtonBase_OnClick"
-                            Content="Button 1" />
-                    <Button Margin="10"
-                            Click="ButtonBase_OnClick"
-                            Content="Button 2" />
-
-                </StackPanel>
-            </GroupBox>
-
-            <GroupBox Margin="10" Header="Normal Focus Behavior">
-                <StackPanel Orientation="Vertical">
-
-                    <Button Margin="10" Content="Button 3" />
-                    <Button Margin="10" Content="Button 4" />
-
-                </StackPanel>
-            </GroupBox>
-
-        </StackPanel>
+        <GroupBox Margin="10" Header="Welcome to the Focus Hell" VerticalAlignment="Center">
+            <StackPanel Orientation="Vertical">
+                <CheckBox x:Name="testCB" Margin="5">AlwaysShowFocusVisual</CheckBox>
+                <Button x:Name="firstButton" controlzex:KeyboardNavigationEx.AlwaysShowFocusVisual="{Binding ElementName=testCB, Path=IsChecked, Mode=OneWay}" Margin="5">One</Button>
+                <Button controlzex:KeyboardNavigationEx.AlwaysShowFocusVisual="{Binding ElementName=testCB, Path=IsChecked, Mode=OneWay}" Margin="5">Two</Button>
+                <Button controlzex:KeyboardNavigationEx.AlwaysShowFocusVisual="{Binding ElementName=testCB, Path=IsChecked, Mode=OneWay}" Margin="5">Three</Button>
+            </StackPanel>
+        </GroupBox>
 
     </Grid>
 </Window>

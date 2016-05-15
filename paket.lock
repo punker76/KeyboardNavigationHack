@@ -1,0 +1,5 @@
+FRAMEWORK: >= NET45
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    ControlzEx (2.1.0-dev065)
